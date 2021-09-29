@@ -1,0 +1,79 @@
+{% include "header.html" %}
+
+
+    <div class="heading-page">
+        <div class="container">
+            <div class="col-md-12">
+                <h2>About Ikechukwu</h2>
+                <div class="line-dec"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="container">
+            <div class="col-md-4">
+                <div class="service-item">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/first-service-icon.png')}}" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Design &amp; Development</h2>
+                        <p> I have worked in the web development space for over 9 years and over the years I have had
+                            the privilege of working with quite a number of teams. One thing I know I love doing is
+                            brining to life designs and web applications from nothing to reality.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-item">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/second-service-icon.png')}}" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Deliver On Time</h2>
+                        <p>As a rule I prefer to stick to my timely delivery of projects. To achieve this I set
+                            realistic and reasonable timelines. What this does for me is it helps me under promise and
+                            over deliver.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-item">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/third-service-icon.png')}}" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Quality Preview</h2>
+                        <p> I have worked on a few projects such as company or corporate websites, recruitment portals
+                            computer based testing portals, hospital management systems, inventory management systems
+                            but to mention a few.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="subscribe-form">
+        <div class="container">
+            <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+          	<form action="#" method="get">
+                <h4>I run a blog that simplifies the whole coding process for python and it is targeted at helping
+                    children become better programmers.</h4>
+                <fieldset>
+                    <input name="email" type="text" id="email"
+                    onfocus="if(this.value == 'Your Email...') { this.value = ''; }"
+                    onBlur="if(this.value == '') { this.value = 'Your Email...';}"
+                    value="Your Email..." required="" />
+          		</fieldset>
+                <fieldset>
+                    <button type="submit" id="form-submit" class="btn">Subscribe Now!</button>
+                </fieldset>
+            </form>
+            </div>
+        </div>
+    </div>
+
+{% include "footer.html" %}
